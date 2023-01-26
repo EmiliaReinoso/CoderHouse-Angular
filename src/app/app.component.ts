@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Curso } from './models/curso';
+import { Usuario } from './models/usuario';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'desafio-2';
+  usuarioLogueado: Usuario = {
+    nombre: 'Emilia',
+    contrasena: '123456',
+    admin: true
+  }
+
+
 }
